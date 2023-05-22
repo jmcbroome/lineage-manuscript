@@ -27,3 +27,4 @@ From the protobuf, an Auspice JSON can be extracted and annotated.
 matUtils extract -i seabra_zika.pb -j seabra_zika.json -M zika_metadata.csv
 ```
 
+Our ARI analysis can be found in the included Jupyter notebook.
