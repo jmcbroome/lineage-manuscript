@@ -1,6 +1,14 @@
 This folder contains code and data to replicate an application of Autolin to Seabra et al's Zika phylogeny and associated lineage system.
 
-First, obtain the [Supplementary Table S3](https://academic.oup.com/ve/article/8/1/veac029/6555351#351081937) online and save it to this directory. Then run our Entrez-based download script- `python3 download_zika_sequences.py`. This script parses this table, saves a csv with reordered columns, and produces both a fasta for the reference used in Seabra et al and a fasta containing the sequences of all samples mentioned in Supplementary Table S3. The newick itself can be obtained by contacting the corresponding authors directly.
+First, obtain the [Supplementary Table 
+S3](https://academic.oup.com/ve/article/8/1/veac029/6555351#351081937) 
+online and save it to this directory. Then run our Entrez-based download 
+script- `python3 download_zika_sequences.py`. This script parses this 
+table, saves a csv with reordered columns, and produces both a fasta for 
+the reference used in Seabra et al and a fasta containing the sequences of 
+all samples mentioned in Supplementary Table S3. The newick itself is 
+available in this repository or at 
+https://github.com/seabrasg/zika_diversity/blob/main/tree_759.nwk.
 
 Once the reference and sequences are available, a protobuf can be produced using [our pipeline](https://github.com/jmcbroome/pathogen-protobuf). Edit the configuration file so that the reference variable matches the name of your reference fasta file. 
 
